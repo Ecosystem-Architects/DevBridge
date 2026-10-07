@@ -1,0 +1,53 @@
+name: 🐞 Bug report
+description: Report something broken or incorrect
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time! Search existing issues first. If this touches security, use [SECURITY.md](../SECURITY.md) instead.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Include console output and screenshots if UI-related.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to '...'
+        2. Click '...'
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - frontend
+        - supabase / database / RLS
+        - ai-service (stretch)
+        - docs
+        - CI / infra
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: OS, browser, Node version
+  - type: textarea
+    id: mentor
+    attributes:
+      label: Notes for mentors
+      description: Questions, hints, or links you already tried.

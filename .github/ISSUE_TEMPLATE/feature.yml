@@ -1,0 +1,47 @@
+name: ✨ Feature request
+description: Propose a new feature or improvement
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Reminder: the MVP scope is frozen (see PROPOSAL.md). Improvements to features already inside the MVP scope are welcome; entirely new features will be triaged to the backlog first.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What value does this unlock and for whom?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: This does not add an out-of-MVP feature (checked against PROPOSAL.md)
+          required: true
+        - label: I searched for existing issues before opening this one
+          required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - frontend
+        - supabase / database / RLS
+        - ai-service (stretch)
+        - docs
+        - CI / infra
+    validations:
+      required: true
+  - type: textarea
+    id: ac
+    attributes:
+      label: Suggested acceptance criteria
+      description: How would a maintainer verify this is done?

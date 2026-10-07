@@ -1,0 +1,25 @@
+node_modules/
+dist/
+coverage/
+*.local
+
+# Env files — never commit real keys
+.env
+.env.*
+!.env.example
+
+# Supabase
+supabase/.temp/
+supabase/.branches/
+
+# Logs / OS junk
+*.log
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Local agent tool state
+.freebuff/

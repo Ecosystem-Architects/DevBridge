@@ -11,8 +11,10 @@ First off, **thanks** for considering to contribute — this project exists for 
 
 ## Getting started (first-time contributors)
 
+Fork the repository
+
 ```bash
-git clone https://github.com/your-org/devbridge
+git clone https://github.com/your-username/devbridge
 cd devbridge/frontend
 cp ../.env.example .env        # fill VITE_SUPABASE_URL / VITE_SUPABASE_ANON_KEY
 npm ci
